@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="709" pageHeight="501" orientation="Landscape" columnWidth="669" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2da3569d-4957-4a58-8bd1-7188b9882e0a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     data_kriteria.`id_kriteria` AS data_kriteria_id_kriteria,
+     data_kriteria.`kode` AS data_kriteria_kode,
+     data_kriteria.`kriteria` AS data_kriteria_kriteria,
+     data_kriteria.`wj` AS data_kriteria_wj,
+     data_kriteria.`bobot` AS data_kriteria_bobot,
+     data_kriteria.`atribut` AS data_kriteria_atribut
+FROM
+     `data_kriteria` data_kriteria]]>
+	</queryString>
+	<field name="data_kriteria_id_kriteria" class="java.lang.Integer"/>
+	<field name="data_kriteria_kode" class="java.lang.String"/>
+	<field name="data_kriteria_kriteria" class="java.lang.String"/>
+	<field name="data_kriteria_wj" class="java.lang.String"/>
+	<field name="data_kriteria_bobot" class="java.math.BigDecimal"/>
+	<field name="data_kriteria_atribut" class="java.lang.String"/>
+	<variable name="data_kriteria_id_kriteria_1" class="java.lang.Integer" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{data_kriteria_id_kriteria}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a8461287-5e12-4165-9d1c-2085dedf19e4" x="130" y="12" width="476" height="29" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[YAYASAN ISLAM AL-FAUZAN NUSANTARA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="226e2ffb-5266-42f7-824b-ad5379a47777" x="130" y="63" width="476" height="30" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TANJUNG BARAT – JAGAKARSA – JAKARTA SELATAN
+Sekretariat : Jl. Rancho Indah, Gg. Gintung, No.200, RT 11/ RW 02, HP :08783019224]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="22cc0bbe-d9c8-403a-b605-99526e0fd700" x="51" y="15" width="79" height="77"/>
+				<imageExpression><![CDATA["C:\\Users\\Nanang M\\Documents\\NetBeansProjects\\APK_Pemilihan_Siswa\\src\\img\\LOGO.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="a8461287-5e12-4165-9d1c-2085dedf19e4" x="130" y="41" width="476" height="22" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMK AL-FAUZAN NUSANTARA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a8461287-5e12-4165-9d1c-2085dedf19e4" x="51" y="0" width="555" height="40" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA KRITERIA & BOBOT KRITERIA]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d32a344b-3fb2-45f9-9236-6a19b697f835" x="51" y="0" width="555" height="1" forecolor="#666666"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b32d77e5-7f5a-4fbc-b487-a665b74ceeb6" mode="Opaque" x="70" y="1" width="39" height="20" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1148385a-a737-47f2-b036-f0f03c7c0c29" mode="Opaque" x="109" y="1" width="71" height="20" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42946ed0-fd7e-4c1e-8023-8ce30d4872df" mode="Opaque" x="180" y="1" width="100" height="20" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KRITERIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7ab46c59-8613-4e02-8cd9-6634a9b4be2c" mode="Opaque" x="280" y="1" width="100" height="20" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Wj]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="83a55401-5187-486b-8410-f4d7527cdbd4" mode="Opaque" x="380" y="1" width="100" height="20" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[BOBOT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5d75160a-a891-46a4-9cf8-d7f8d13d32cd" mode="Opaque" x="480" y="1" width="100" height="20" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ATRIBUT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="1f969026-e523-42b4-86c7-aef231e28102" x="109" y="0" width="71" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kriteria_kode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd7ae45e-6286-4aa7-a4fc-75ad23b273b5" x="180" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kriteria_kriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1249fff8-5590-4eec-9b2e-7b7afc0930da" x="280" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kriteria_wj}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="12fe0186-e9d4-47bd-b177-853e7d94e85b" x="380" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kriteria_bobot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8671dc63-4220-4ff1-b0b8-2316879a0fb2" x="480" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_kriteria_atribut}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ee5becd5-494a-41bf-b07e-d56e8865d4c4" x="70" y="0" width="39" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="65f7e6c8-3b7b-47ab-8b86-3d63b1686cb7" x="434" y="0" width="48" height="13"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="f2ec96d7-19e4-4a84-afd1-6a8545cbae69" x="477" y="0" width="129" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMMM yyyy",new
+java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="22cc0bbe-d9c8-403a-b605-99526e0fd700" x="451" y="28" width="85" height="65"/>
+				<imageExpression><![CDATA["C:\\Users\\Nanang M\\Documents\\NetBeansProjects\\APK_Pemilihan_Siswa\\src\\img\\ttd.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1f328736-d457-435e-a289-384137b042e9" x="477" y="13" width="100" height="15"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[Kepala TU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8b457c50-a761-4e60-9eab-5f5b694bf160" x="451" y="93" width="122" height="20"/>
+				<textElement/>
+				<text><![CDATA[Lufi Hendriyanto, S.Kom]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="22cc0bbe-d9c8-403a-b605-99526e0fd700" x="377" y="13" width="100" height="97"/>
+				<imageExpression><![CDATA["C:\\Users\\Nanang M\\Documents\\NetBeansProjects\\APK_Pemilihan_Siswa\\src\\img\\stmplsmk.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
