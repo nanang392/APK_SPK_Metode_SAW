@@ -55,11 +55,3 @@
 3.  Lakukan perubahan dan commit dengan pesan yang jelas (`git commit -m "Menambahkan fitur baru"`).
 4.  Push ke branch Anda (`git push origin fitur-baru`).
 5.  Buat Pull Request ke repositori ini.
-
-**Lisensi 📄**
-
-Tidak ada lisensi yang ditentukan.
-
-
----
-README.md ini dihasilkan secara otomatis oleh [README.MD Generator](https://github.com/emRival) — dibuat dengan ❤️ oleh [emRival](https://github.com/emRival)
