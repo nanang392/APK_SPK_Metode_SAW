@@ -1,30 +1,31 @@
-# Sistem Pendukung Keputusan Pemilihan Siswa Berprestasi dengan Metode SAW ✨
+# Sistem Pendukung Keputusan Pemilihan Siswa Berprestasi dengan Metode SAW 🏆
 
 <p align="center">
-  <img style="margin-right: 8px;" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java">
-  <img style="margin-right: 8px;" src="https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white" alt="NetBeans">
-  <img style="margin-right: 8px;" src="https://img.shields.io/badge/OOP-4F5052?style=for-the-badge&logo=gnu-objectmodel&logoColor=white" alt="Object-Oriented Programming">
+  <img style="margin-right: 8px;" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java Badge">
+  <img style="margin-right: 8px;" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Badge">
+  <img style="margin-right: 8px;" src="https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white" alt="NetBeans Badge">
+  <img style="margin-right: 8px;" src="https://img.shields.io/badge/JasperReports-007399?style=for-the-badge&logo=jasperreports&logoColor=white" alt="JasperReports Badge">
 </p>
 
-📝 Aplikasi ini dirancang untuk membantu proses pengambilan keputusan dalam pemilihan siswa berprestasi menggunakan metode Simple Additive Weighting (SAW). Dibuat dengan Java dan memanfaatkan NetBeans IDE, aplikasi ini menyediakan antarmuka yang mudah digunakan untuk mengelola data siswa, kriteria penilaian, dan melakukan perhitungan SAW untuk menghasilkan rekomendasi siswa berprestasi.
+📝 Aplikasi ini merupakan sistem pendukung keputusan (SPK) yang dirancang untuk membantu proses pemilihan siswa berprestasi menggunakan metode Simple Additive Weighting (SAW). Aplikasi ini dibangun dengan Java dan memanfaatkan database MySQL untuk menyimpan data siswa dan kriteria penilaian. Tujuannya adalah untuk menyediakan alat yang efisien dan objektif dalam menentukan siswa yang paling layak menerima penghargaan.
 
-**Fitur Utama ✨**
+✨ Aplikasi ini membantu sekolah atau institusi pendidikan dalam proses seleksi siswa berprestasi dengan metode yang terstruktur dan transparan.
 
-*   🏆 **Perhitungan SAW Otomatis:** Menghitung skor siswa berdasarkan kriteria yang telah ditentukan menggunakan metode SAW.
-*   📊 **Laporan dan Visualisasi:** Menghasilkan laporan yang mudah dibaca dan divisualisasikan untuk membantu dalam proses pengambilan keputusan.
-*   ⚙️ **Konfigurasi Kriteria:** Fleksibilitas untuk menyesuaikan kriteria penilaian dan bobot sesuai dengan kebutuhan.
-*   🗄️ **Manajemen Data Siswa:** Mengelola data siswa, termasuk menambah, mengedit, dan menghapus data.
-*   🎨 **Antarmuka Pengguna yang Intuitif:** Antarmuka pengguna yang mudah digunakan untuk memudahkan navigasi dan penggunaan aplikasi.
+### **Fitur Utama ✨**
 
-**Tech Stack 🛠️**
+*   ✅ **Implementasi Metode SAW:** Menerapkan metode Simple Additive Weighting untuk memberikan bobot pada setiap kriteria dan menghasilkan skor akhir untuk setiap siswa.
+*   📊 **Manajemen Data Siswa:** Memungkinkan penambahan, pengeditan, dan penghapusan data siswa beserta nilai-nilai mereka pada setiap kriteria.
+*   🗄️ **Laporan dan Visualisasi:** Menghasilkan laporan hasil seleksi dalam format yang mudah dibaca dan dipahami, serta visualisasi data yang relevan.
+*   ⚙️ **Konfigurasi Kriteria:** Memungkinkan penyesuaian kriteria penilaian dan bobot masing-masing kriteria sesuai dengan kebutuhan institusi.
 
-*   ☕ Java: Bahasa pemrograman utama.
-*   👨‍💻 NetBeans IDE: Lingkungan pengembangan terintegrasi.
-*   🧮 Metode SAW: Metode pengambilan keputusan.
-*   📊 JasperReports: Library untuk menghasilkan laporan (berdasarkan file `.jasper` dan `.jrxml`).
-*   📚 OOP: Pemrograman Berorientasi Objek.
+### **Tech Stack 🛠️**
 
-**Instalasi & Menjalankan 🚀**
+*   ☕ **Bahasa Pemrograman:** Java
+*   🗄️ **Database:** MySQL
+*   🖥️ **IDE:** NetBeans
+*   📊 **Reporting:** JasperReports
+
+### **Instalasi & Menjalankan 🚀**
 
 1.  Clone repositori:
     ```bash
@@ -36,22 +37,27 @@
     cd APK_SPK_Metode_SAW
     ```
 
-3.  Compile kode Java: Karena proyek ini menggunakan NetBeans, Anda dapat membuka proyek di NetBeans dan meng-compile proyek. Atau, gunakan `javac`:
-    ```bash
-    javac -d build/classes src/Main/*.java src/Report/*.java
-    ```
-    (Sesuaikan path jika struktur direktori berbeda)
+3.  Import project ke NetBeans:
+    *   Buka NetBeans.
+    *   Pilih "File" -> "Open Project..."
+    *   Arahkan ke direktori `APK_SPK_Metode_SAW` dan pilih project.
 
-4.  Jalankan proyek:
-    ```bash
-    java -cp build/classes Main.MenuUtama
-    ```
-    (Pastikan `build/classes` berada di classpath)
+4.  Konfigurasi koneksi database:
+    *   Buka file konfigurasi database (biasanya di dalam kode Java).
+    *   Sesuaikan pengaturan koneksi (host, port, nama database, username, password) agar sesuai dengan konfigurasi MySQL Anda.
 
-**Cara Berkontribusi 🤝**
+5.  Build project:
+    *   Klik kanan pada nama project di panel "Projects" NetBeans.
+    *   Pilih "Clean and Build Project".
+
+6.  Jalankan proyek:
+    *   Klik kanan pada nama project di panel "Projects" NetBeans.
+    *   Pilih "Run".
+
+### **Cara Berkontribusi 🤝**
 
 1.  Fork repositori ini.
-2.  Buat branch baru dengan nama yang deskriptif (`git checkout -b fitur-baru`).
-3.  Lakukan perubahan dan commit dengan pesan yang jelas (`git commit -m "Menambahkan fitur baru"`).
-4.  Push ke branch Anda (`git push origin fitur-baru`).
-5.  Buat Pull Request ke repositori ini.
+2.  Buat branch baru dengan nama yang deskriptif: `git checkout -b fitur/nama-fitur`
+3.  Lakukan perubahan dan commit dengan pesan yang jelas: `git commit -m "Menambahkan fitur baru"`
+4.  Push ke branch Anda: `git push origin fitur/nama-fitur`
+5.  Buat Pull Request ke branch `main` pada repositori ini.
